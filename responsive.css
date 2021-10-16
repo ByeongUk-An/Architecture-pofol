@@ -1,0 +1,19 @@
+/* PC VERSION */
+/* @media (min-width : 1024px) {
+  
+} */
+
+@media (max-width: 768px) {
+  /* Entire Layout */
+  .cd-section {
+    height: auto;
+  }
+  .cd-section > div {
+    height: auto;
+  }
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+}
