@@ -102,6 +102,53 @@ header {
   transform: scale(0);
 }
 
+/* #################### Section : about #################### */
+.about-inner {
+  background: url(./images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+  background-size: 50%;
+  background-color: #0dace3;
+}
+.about-items {
+  width: 60%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 100px;
+}
+.item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.item:hover h3 {
+  color: #000;
+  letter-spacing: 1px;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item img {
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+  filter: invert(1);
+  transition: 0.5s;
+}
+.item h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item span {
+}
+.item p {
+  font-size: 18px;
+  overflow: hidden;
+}
+
 /* #################### Section : awards winner #################### */
 .awards-inner {
   height: 100%;
