@@ -4,6 +4,9 @@
 } */
 
 @media (max-width: 768px) {
+  /* html {
+    scroll-behavior: smooth;    -> 스크롤시 smooth 하게 해주는 요소 ie에서는 작동이 안됨
+  } */
   /* Entire Layout */
   .cd-section {
     height: auto;
@@ -17,6 +20,14 @@
     height: 100%;
   }
   /* Header */
+  header {
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
   .menu {
     display: block;
   }
@@ -88,4 +99,29 @@
     top: 50%;
     transform: rotate(-45deg);
   }
+
+  /* Gototop */
+  .gototop {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .gototop.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .btn-hiring {
+    bottom: 20px;
+    right: 20px;
+  }
+  
 }
