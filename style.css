@@ -101,3 +101,66 @@ header {
 .btn-hiring:active {
   transform: scale(0);
 }
+
+/* #################### Section : awards winner #################### */
+.awards-inner {
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.awards-inner > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.about-awards {
+  background-color: #1a1f24;
+  color: #fff;
+}
+.about-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
+.victory-jump {
+  background-color: #fff;
+}
+.victory-jump img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.about-heading h2 {
+  margin: 0;
+}
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  margin: 30px auto;
+}
+.about-heading p {
+  color: #999;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+.view-awards {
+  color: #bbb;
+  border: 1px solid #bbb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+  display: inline-block;
+  margin-top: 20px;
+}
+.view-awards:hover {
+  background-color: #31c0ce;
+  color: #fff;
+  border-color: transparent;
+}
