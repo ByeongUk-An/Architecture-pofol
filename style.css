@@ -150,6 +150,39 @@ header {
   font-size: 18px;
   overflow: hidden;
 }
+/* #################### Section : plan #################### */
+.plan-inner {
+  background-color: #1d1b24;
+  height: 100%;
+}
+.plan-feature {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature > div {
+  height: 300px;
+  color: #bbb;
+}
+.plan-info {
+}
+.plan-info div {
+  border: 1px solid blue;
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+}
+.plan-photo {
+  width: 30%;
+}
+.plan-photo img {
+  height: 250px;
+}
+.history-info {
+}
 
 /* #################### Section : awards winner #################### */
 .awards-inner {
@@ -358,7 +391,8 @@ hr.bar {
   margin: 0;
   margin-top: 20px;
 }
-.contact-info h4 b {}
+.contact-info h4 b {
+}
 .contact-info ul li {
   line-height: 2em;
 }
