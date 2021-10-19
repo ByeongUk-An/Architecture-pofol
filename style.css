@@ -14,6 +14,7 @@
 
 ul {
   list-style: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -291,6 +292,7 @@ hr.bar {
 .contact-feacture > div {
   width: 50%;
   float: left;
+  padding: 20px;
 }
 .contact-form {
 }
@@ -299,17 +301,71 @@ hr.bar {
   font-weight: normal;
   margin: 0;
 }
-.contact-form h3 b {
-}
 .send-box {
 }
 .send-box label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+  margin-top: 20px;
 }
 .send-box label span {
+  color: crimson;
+  font-weight: normal;
 }
-.send-box input {
+.send-box input[type="email"],
+.send-box input[type="text"],
+.send-box textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  transition: 0.5s;
 }
+.send-box input[type="email"]:hover,
+.send-box input[type="text"]:hover,
+.send-box textarea:hover {
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+}
+.send-box input[type="email"]:focus,
+.send-box input[type="text"]:focus,
+.send-box textarea:focus {
+  background-color: #eee;
+}
+
 .send-box button {
+  background-color: #0088cc;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.send-box button:hover {
+  background-color: #000;
 }
 .contact-info {
+}
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+.contact-info h4 b {}
+.contact-info ul li {
+  line-height: 2em;
+}
+.contact-info ul li:last-child {
+  color: #0088cc;
+}
+
+.contact-inpo p {
+  line-height: 1.5em;
 }
