@@ -274,3 +274,42 @@ hr.bar {
   font-size: 22px;
   margin: 0;
 }
+
+/* #################### Section : contact #################### */
+.contact-inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.contact-feacture {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-feacture > div {
+  width: 50%;
+  float: left;
+}
+.contact-form {
+}
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+.contact-form h3 b {
+}
+.send-box {
+}
+.send-box label {
+}
+.send-box label span {
+}
+.send-box input {
+}
+.send-box button {
+}
+.contact-info {
+}
