@@ -169,19 +169,60 @@ header {
 .plan-info {
 }
 .plan-info div {
-  border: 1px solid blue;
   float: left;
 }
 .plan-heading {
   width: 70%;
+  padding-right: 50px;
+}
+.plan-heading h2,
+.history-info h2 {
+  color: #fff;
+  margin: 0;
+}
+.plan-heading p {
+  font-size: 16px;
+  line-height: 1.6em;
 }
 .plan-photo {
   width: 30%;
 }
 .plan-photo img {
-  height: 250px;
+  height: 265px;
+}
+.plan-heading hr.bar,
+.history-info hr.bar {
+  display: inline-block;
+  background-color: dodgerblue;
 }
 .history-info {
+}
+.history-slider {
+}
+.history-slider div h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 1.5em;
+}
+.history-slider div h4 span {
+  color: dodgerblue;
+}
+.history-slider div p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+/* Slick.js Custom CSS */
+.history-slider .slick-arrow {
+  display: none !important;
+}
+.history-slider .slick-dots li button:before {
+  color: #fff;
+  font-size: 40px;
+}
+.history-slider .slick-dots li {
+  margin: 0;
 }
 
 /* #################### Section : awards winner #################### */
