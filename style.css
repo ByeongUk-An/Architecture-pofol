@@ -219,7 +219,7 @@ hr.bar {
   height: 100%;
 }
 .location-inner::before {
-  content:'';
+  content: "";
   background-color: rgba(0, 0, 0, 0.85);
   width: 100%;
   height: 100%;
@@ -251,7 +251,7 @@ hr.bar {
   font-weight: 500;
   margin: 0;
   margin-top: 5px;
-}  
+}
 .office p {
   font-size: 16px;
   line-height: 1.5em;
@@ -262,10 +262,15 @@ hr.bar {
 .customer {
   margin-top: 40px;
 }
-.service-item {}
+.service-item {
+  margin-bottom: 40px;
+}
 .service-item .fa {
   color: #1db1f0;
   font-size: 40px;
 }
-.service-item h3 {}
-.service-item p {}
+.service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+}
