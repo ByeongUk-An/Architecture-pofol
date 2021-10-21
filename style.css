@@ -103,6 +103,153 @@ header {
   transform: scale(0);
 }
 
+/* #################### Section : project #################### */
+.project-inner {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.tabs {
+  width: 300%;
+  height: 100%;
+  transition: 0.5s;
+}
+.tab {
+  width: 33.33333333%;
+  height: 100%;
+  float: left;
+}
+.tab > div {
+  height: 100%;
+  float: left;
+}
+.project-info {
+  width: 25%;
+}
+.project-photo {
+  width: 75%;
+  overflow: hidden;
+}
+input[name="tabmenu"] {
+  display: none;
+}
+.btn {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+.btn label {
+  display: inline-block;
+  cursor: pointer;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 8px;
+  position: relative;
+}
+.btn label::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  transition: 0.3s;
+}
+.btn label:hover::before {
+  border: 1px solid #aaa;
+}
+input[id="tab1"]:checked ~ .btn label[for="tab1"]::before,
+input[id="tab2"]:checked ~ .btn label[for="tab2"]::before,
+input[id="tab3"]:checked ~ .btn label[for="tab3"]::before {
+  border: 1px solid #aaa;
+}
+input[id="tab1"]:checked ~ .tabs {
+  margin-left: 0;
+}
+input[id="tab2"]:checked ~ .tabs {
+  margin-left: -100%;
+}
+input[id="tab3"]:checked ~ .tabs {
+  margin-left: -200%;
+}
+
+/* Project info */
+.project-info {
+  padding: 50px;
+  position: relative;
+}
+.project-info h3 {
+  font-size: 20px;
+  position: relative;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.project-info ul {
+  line-height: 2em;
+  margin: 50px 0;
+}
+.project-info ul li {
+}
+.project-info ul li::before {
+  content: "\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  margin-bottom: 50px;
+}
+.detail div {
+  display: inline-block;
+  text-align: center;
+  width: 32.5%;
+  color: #999;
+}
+.detail div span {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  color: #000;
+  margin-bottom: 10px;
+}
+.view-project {
+  background-color: #3f3f3f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s;
+}
+.view-project:hover {
+  background-color: #000;
+}
+.view-project .fa {
+  transition: 0.5s;
+}
+.view-project:hover .fa {
+  margin-left: 30px;
+}
+.project-info::before {
+  content: attr(data-text);
+  font-size: 130px;
+  color: #eee;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+
+}
 /* #################### Section : about #################### */
 .about-inner {
   background: url(./images/line-drawing.png) no-repeat right bottom;
